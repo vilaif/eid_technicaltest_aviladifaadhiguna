@@ -24,7 +24,7 @@ class MachinesTable
                     ->sortable(),
                 TextColumn::make('status')
                     ->badge()
-                    ->color(fn (string $state): string => match ($state) {
+                    ->color(fn(string $state): string => match ($state) {
                         'Running' => 'success',
                         'Idle' => 'warning',
                         'Maintenance' => 'info',
@@ -46,7 +46,8 @@ class MachinesTable
                 SelectFilter::make('type')
                     ->options([
                         'CNC' => 'CNC',
-                        'Milling Press' => 'Milling Press',
+                        'Milling' => 'Milling',
+                        'Press' => 'Press',
                         'Assembly' => 'Assembly',
                     ]),
                 SelectFilter::make('status')

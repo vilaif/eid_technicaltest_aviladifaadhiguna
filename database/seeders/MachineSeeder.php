@@ -16,9 +16,10 @@ class MachineSeeder extends Seeder
         $machines = [
             ['name' => 'CNC-001', 'type' => 'CNC'],
             ['name' => 'CNC-002', 'type' => 'CNC'],
-            ['name' => 'MP-001', 'type' => 'Milling Press'],
-            ['name' => 'MP-002', 'type' => 'Milling Press'],
-            ['name' => 'MP-003', 'type' => 'Milling Press'],
+            ['name' => 'MIL-001', 'type' => 'Milling'],
+            ['name' => 'MIL-002', 'type' => 'Milling'],
+            ['name' => 'PR-001', 'type' => 'Press'],
+            ['name' => 'PR-002', 'type' => 'Press'],
             ['name' => 'Assembly-001', 'type' => 'Assembly'],
             ['name' => 'Assembly-002', 'type' => 'Assembly'],
         ];

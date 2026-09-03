@@ -16,7 +16,7 @@ class MachineForm
                     ->required()
                     ->maxLength(255),
                 Select::make('type')
-                    ->options(['CNC' => 'CNC', 'Milling Press' => 'Milling press', 'Assembly' => 'Assembly'])
+                    ->options(['CNC' => 'CNC', 'Milling' => 'Milling', 'Press' => 'Press', 'Assembly' => 'Assembly'])
                     ->required(),
                 Select::make('status')
                     ->options(['Running' => 'Running', 'Idle' => 'Idle', 'Maintenance' => 'Maintenance', 'Error' => 'Error'])

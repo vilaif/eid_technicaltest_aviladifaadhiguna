@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -14,7 +13,7 @@ return new class extends Migration
         Schema::create('machines', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->enum('type', ['CNC', 'Milling Press', 'Assembly']);
+            $table->enum('type', ['CNC', 'Milling', 'Press', 'Assembly']);
             $table->enum('status', ['Running', 'Idle', 'Maintenance', 'Error']);
             $table->decimal('current_temperature', 5, 2)->nullable();
             $table->timestamps();
